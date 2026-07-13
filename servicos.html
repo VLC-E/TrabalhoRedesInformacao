@@ -1,96 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Biblioteca Orbital - Serviços</title>
-  <style>
-     body { background: #000; 
-	 color: #FFF; 
-	 font-family: Arial, sans-serif;
-	 margin: 0; 
-	 text-align: center; 
-	 }
-	 
-    h1	{
-	 
-		color: #D4AF37;
-		font-size: 42px;
-		margin: 30px 0 10px 0; 
-		} 
-    h2 {
-		color: #D4AF37;
-		margin-top: 30px; 
-		}
-		
-	img {
-		width: 80%; 
-		max-width: 400px; 
-		border: 3px solid #D4AF37;
-		margin: 20px 0; 
-		}
-		
-	  .menu{
-	  background: #111;
-	  padding: 15px;
-	  border-bottom: 2px solid  #D4AF37;
-	 } 
-	 
-      .menu a {
-		color: #FFF; 
-		text-decoration: none; 
-		margin: 0 25px;
-		font-weight: bold;
-		font-size: 16px;
-	}
-	  .menu a:hover {
-		color: #D4AF37; 
-		
-	} 
-	
-		texto { 
-		max-width: 800px; 
-		margin:  20px auto;
-		padding: 0 20px; 
-		text-align: left; 
-	}
-		
-        p  { 
-		font-size: 18px;
-		line-height: 1.6; 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Biblioteca Orbital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-	}
-	
-
-	</style>		
-</head>	
 <body>
-    <div class="menu">
-        <a href="index.html">Início</a>
-        <a href="acervo.html">Acervo</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="eventos.html">Eventos</a>
-        <a href="contato.html">Contato</a>
-    </div>
-    
-    <div class="texto">
-	    <h1>Nossos Serviços</h1>
-	<figure>	
-        <img src="img/salas.jpg" alt="Sala de estudos da Biblioteca Orbital"width="400" height="350" />
-        <figcaption>Fotografia da Sala de Estudos da Biblioteca Orbital </figcaption>
-        </figure>
-        <h2>Empréstimo de Obras</h2>
-        <p>Retire livros,periódicos e materiais multimídia por até 14 dias. Renovação online pelo catálogo.</p>
-        
-        <h2>Reserva de Salas</h2>
-        <p>Salas individuais e para grupos de até 6 pessoas.Agende pelo site ou no balcão</p>
-        
-        <h2>Treinamento de Usuários</h2>
-        <p>Oferecemos capacitação em bases de dados, normas ABNT e pesquisa acadêmica. Turmas toda terça ás 14h.</p>
-		
-		<h2> Acesso Digital</h2>
-		<p>Consulte e-books, artigos e teses 24h pelo Portal de Periódicos. Login após cadastro no site.</p>
-		</div>
-				
-    
+
+  <header>
+    <a href="index.html" class="logo-link">
+      <img src="img/logo-orbital.png" alt="Logo Biblioteca Orbital">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="acervo.html">Acervo</a></li>
+        <li><a href="servicos.html" class="ativo">Serviços</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="index-blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="conteudo">
+      <h1>Nossos Serviços</h1>
+
+      <figure>
+        <img src="img/salas.jpg" alt="Sala de estudos da Biblioteca Orbital">
+        <figcaption>Sala de Estudos da Biblioteca Orbital</figcaption>
+      </figure>
+
+      <p>A Biblioteca Orbital oferece uma ampla gama de serviços voltados ao estudo, à pesquisa e ao acesso à
+        informação. Conheça abaixo tudo que está disponível para a comunidade.</p>
+
+      <!-- Tabela organizada de serviços -->
+      <h2>Tabela de Serviços</h2>
+      <table class="servicos-table">
+        <thead>
+          <tr>
+            <th>Serviço</th>
+            <th>Descrição</th>
+            <th>Disponibilidade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Empréstimo de Obras</strong></td>
+            <td>Retirada de livros, periódicos e materiais multimídia</td>
+            <td>Seg:Sex 8h:22h | Sáb 9h:18h</td>
+          </tr>
+          <tr>
+            <td><strong>Consulta Local</strong></td>
+            <td>Acesso ao acervo físico nas dependências da biblioteca</td>
+            <td>Seg:Sex 8h:22h | Sáb 9h:18h</td>
+          </tr>
+          <tr>
+            <td><strong>Acesso à Internet</strong></td>
+            <td>Computadores e Wi-Fi gratuitos para usuários cadastrados</td>
+            <td>Durante horário de funcionamento</td>
+          </tr>
+          <tr>
+            <td><strong>Reserva de Salas</strong></td>
+            <td>Salas individuais e para grupos de até 6 pessoas</td>
+            <td>Agende pelo site ou no balcão</td>
+          </tr>
+          <tr>
+            <td><strong>Capacitações</strong></td>
+            <td>Treinamentos em bases de dados, normas ABNT e pesquisa acadêmica</td>
+            <td>Terças-feiras às 14h</td>
+          </tr>
+          <tr>
+            <td><strong>Serviços de Referência</strong></td>
+            <td>Atendimento personalizado para orientação em pesquisas e fontes</td>
+            <td>Seg:Sex 9h:18h</td>
+          </tr>
+          <tr>
+            <td><strong>Acesso Digital</strong></td>
+            <td>Portal de Periódicos CAPES, e-books e 30 bases de dados acadêmicas</td>
+            <td>24h - acesso remoto com login</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Empréstimo de Obras</h2>
+      <p>Retire livros, periódicos e materiais multimídia por até 14 dias. Renovação online pelo catálogo. Usuários de
+        pós-graduação têm prazo estendido de 30 dias.</p>
+
+      <h2>Consulta Local</h2>
+      <p>Todo o acervo físico está disponível para consulta nas dependências da biblioteca. Obras de referência
+        (enciclopédias, dicionários, normas) são de uso exclusivamente local.</p>
+
+      <h2>Acesso à Internet</h2>
+      <p>Disponibilizamos terminais de computador e rede Wi-Fi gratuita. Acesso liberado para usuários cadastrados
+        mediante apresentação da carteirinha ou CPF.</p>
+
+      <h2>Capacitações</h2>
+      <p>Oferecemos capacitação em bases de dados, normas ABNT e pesquisa acadêmica. Turmas toda terça às 14h.
+        Inscrições no balcão de atendimento ou por e-mail.</p>
+
+      <h2>Acesso Digital</h2>
+      <p>Consulte e-books, artigos e teses 24h pelo Portal de Periódicos. Login após cadastro no site.</p>
+
+      <h2>Serviços de Referência</h2>
+      <p>Nossa equipe de bibliotecários orienta pesquisas, indica fontes confiáveis, auxilia na elaboração de
+        referências bibliográficas e realiza levantamentos temáticos sob demanda.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Biblioteca Orbital. Desenvolvido para fins acadêmicos.</p>
+  </footer>
+
 </body>
+
 </html>

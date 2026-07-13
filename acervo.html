@@ -1,154 +1,128 @@
 <!DOCTYPE html>
-<html  lang="pt-BR">
+<html lang="pt-BR">
 <head>
-    <meta  charset= "UTF-8">
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca Orbital - Acervo</title>
-    <style>
-	    body {
-		background: #000;
-		color: #FFF; 
-		font-family:Arial, sans-serif;
-		margin: 0; 
-		text-align: center;
-	}
-	h1 {
-		color: #D4AF37;
-		font-size: 42px;
-		margin: 30px 0 10px 0;
-	} 
-		img {
-		width: 80%; 
-		max-width: 400px;
-		border: 3px solid #D4AF37; 
-		margin: 20px 0;
-	}
-	figcaption {
-	    color: #cccccc;
-		font-size: 14px;
-		margin-bottom: 20px;
-	}
-	.menu{ 
-	background: #222; 
-	padding:  15px; 
-	border-bottom: 2px solid  #D4AF37;
-	} 
-	
-    .menu a {
-		color: #FFF;
-		text-decoration: none;
-		margin: 0 8px;
-		padding: 10px 22px; 
-		font-weight: bold;
-		font-size: 16px;
-        border-radius: 5px;
-		
-	}	
-	.menu a:hover { 
-	   background: #000;
-	   color: #D4AF37;
-	}   
-	.menu a ativo {
-       background: #000;
-	   color: #FFF;
-	}   
-    p  { 
-		font-size: 18px;
-		max-width: 600px; 
-		margin: 20px auto; 
-		padding: 0 20px; 
-		line-height: 1.6;
-	}
-	
-    ul { 
-	    max-width: 600px;
-	    margin: 20px auto; 
-	    text-align: left; 
-	    font-size: 18px;
-	    line-height: 1.8;
-	}
-	    ul{
-		max-width: 600px;
-	    margin: 20px auto; 
-	    text-align: left; 
-	    font-size: 18px;
-	    line-height: 1.8;
-	   
-	}
-	
-	li {
-	    margin: 8px 0;
-	}	
-	
-    table {
-        width: 90%;
-        max-width: 800px;
-        margin: 30px auto;
-        border-collapse: collapse;
-        font-size: 16px;
-    }
-    
-    th, td {
-        border: 1px solid #D4AF37;
-        padding: 12px;
-        text-align: left;
-    }
-    
-    th {
-        background: #D4AF37;
-        color: #000;
-    }
-    
-    tr:nth-child(even) {
-        background: #111;
-    }
-    
-    .disponivel { color: #4CAF50; font-weight: bold; }
-    .emprestado { color: #F44336; font-weight: bold; }
-    
-    @media (max-width: 480px) {
-        h1 { font-size: 32px; }
-        .menu a {
-		margin: 5px 4px;
-		padding: 8px 16px;
-		font-size:14px;
-	}	
-        table { font-size: 14px; }
-        th, td { padding: 8px 4px; }
-    }
-</style>
-			
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="menu">
-        <a href="index.html">Início</a>
-        <a href="acervo.html">Acervo</a>
-        <a href="servicos.html">Serviços</a>
-        <a href="eventos.html">Eventos</a>
-        <a href="contato.html">Contato</a>
-	</div>	
 
-        
-    <div class="conteúdo">
-        <h1>Acervo</h1>
-		
-	<figure>
-        <img src="img/acervo.jpg" alt="Estantes de livros do acervo"width="250" height="300" >
-        <figcaption>Fotografia do Acervo da Biblioteca Orbital </figcaption>
-	</figure>
-		
-	</div>	
-		
-        <h2>O que você encontra:</h2>
-        <ul>
-            <li>50.000 livros impressos; entre livros técnicos e literatura geral</li>
-            <li>30 bases de dados: Scopus, Web of Science, IEEE</li>
-            <li>Portal de Periódicos CAPES com acesso remoto</li>
-            <li>Teses e dissertações digitais</li>
-            <li>Coleção de normas ABNT</li>
-        </ul>
-        <p>Todo o catálogo está disponível para consulta online. Não encontrou o que precisa? Solicite por empréstimo entre bibliotecas.</p>
-    
+    <header>
+        <a href="index.html" class="logo-link">
+            <img src="img/logo-orbital.png" alt="Logo Biblioteca Orbital">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="acervo.html" class="ativo">Acervo</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="index-blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo">
+            <h1>Acervo</h1>
+
+            <!-- Imagem do acervo -->
+            <figure>
+                <img src="img/acervo.jpg" alt="Estantes de livros do acervo da Biblioteca Orbital">
+                <figcaption>Acervo da Biblioteca Orbital</figcaption>
+            </figure>
+
+            <!-- Descrição do acervo -->
+            <p>O acervo da Biblioteca Orbital reúne mais de 50.000 títulos entre obras impressas e digitais, cobrindo desde literatura clássica até as publicações científicas mais recentes. Nosso catálogo é atualizado continuamente para atender às necessidades da comunidade acadêmica e do público geral.</p>
+
+            <a href="contato.html" class="btn">Solicitar Obra</a>
+        </section>
+
+        <!-- Categorias de materiais -->
+        <section class="conteudo">
+            <h2>Categorias de Materiais</h2>
+            <div class="acervo-cards">
+                <div class="acervo-card">
+                    <h3>📖 Livros Impressos</h3>
+                    <p>+50.000 volumes entre obras técnicas, científicas e literatura geral.</p>
+                </div>
+                <div class="acervo-card">
+                    <h3>🔬 Bases de Dados</h3>
+                    <p>30 bases acadêmicas: Scopus, Web of Science, IEEE Xplore e mais.</p>
+                </div>
+                <div class="acervo-card">
+                    <h3>📰 Periódicos</h3>
+                    <p>Revistas científicas e jornais nacionais e internacionais em formato digital.</p>
+                </div>
+                <div class="acervo-card">
+                    <h3>🎓 Teses e Dissertações</h3>
+                    <p>Repositório de trabalhos acadêmicos da UnB e de outras instituições.</p>
+                </div>
+                <div class="acervo-card">
+                    <h3>📐 Normas ABNT</h3>
+                    <p>Coleção completa de normas técnicas brasileiras para consulta local e online.</p>
+                </div>
+                <div class="acervo-card">
+                    <h3>💾 E-books</h3>
+                    <p>Acervo digital disponível 24h pelo Portal de Periódicos CAPES.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- O que você encontra -->
+        <section class="conteudo">
+            <h2>O que você encontra</h2>
+            <ul>
+                <li>50.000 livros impressos entre livros técnicos e literatura geral</li>
+                <li>30 bases de dados: Scopus, Web of Science, IEEE</li>
+                <li>Portal de Periódicos CAPES com acesso remoto</li>
+                <li>Teses e dissertações digitais</li>
+                <li>Coleção de normas ABNT</li>
+            </ul>
+            <p>Todo o catálogo está disponível para consulta online. Não encontrou o que precisa? Solicite por empréstimo entre bibliotecas.</p>
+
+            <!-- Destaques do acervo -->
+            <h2>Destaques do Acervo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Destaque</th>
+                        <th>Descrição</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coleção de Ficção Científica</td>
+                        <td>+500 títulos nacionais e estrangeiros, incluindo clássicos do gênero</td>
+                        <td class="disponivel">Disponível</td>
+                    </tr>
+                    <tr>
+                        <td>Fundo Histórico UnB</td>
+                        <td>Documentos e publicações raras sobre a história da Universidade de Brasília</td>
+                        <td class="disponivel">Consulta Local</td>
+                    </tr>
+                    <tr>
+                        <td>Coleção de Astrofísica</td>
+                        <td>Acervo especializado em astronomia, física e ciências espaciais</td>
+                        <td class="disponivel">Disponível</td>
+                    </tr>
+                    <tr>
+                        <td>Periódicos em Ciência da Informação</td>
+                        <td>Revistas especializadas na área de biblioteconomia e arquivologia</td>
+                        <td class="emprestado">Reserva Necessária</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Biblioteca Orbital. Desenvolvido para fins acadêmicos.</p>
+    </footer>
+
 </body>
 </html>
-
